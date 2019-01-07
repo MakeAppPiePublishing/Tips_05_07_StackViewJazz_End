@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Stackview_Jazz" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="mtc-LN-QaY">
+                                <rect key="frame" x="10" y="10" width="647" height="319.5"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="MQU-y0-bnz" userLabel="Stack View Image">
+                                        <rect key="frame" x="0.0" y="0.0" width="319.5" height="319.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Soup!!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="flo-tq-VMc">
+                                                <rect key="frame" x="0.0" y="0.0" width="319.5" height="60.5"/>
+                                                <color key="backgroundColor" name="Yellow  75% #C0C040"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="36"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Y1H-r3-bZ6" userLabel="Stack View Temperature">
+                                                <rect key="frame" x="0.0" y="68.5" width="319.5" height="30"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select Temperature: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yad-Na-aQU">
+                                                        <rect key="frame" x="0.0" y="0.0" width="159" height="30"/>
+                                                        <color key="backgroundColor" name="Yellow  75% #C0C040"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9RL-Zm-DZ5">
+                                                        <rect key="frame" x="167" y="0.0" width="72.5" height="30"/>
+                                                        <color key="backgroundColor" name="Blue 98% Pale #D2D2F8"/>
+                                                        <state key="normal" title="Hot">
+                                                            <color key="titleColor" name="Blue 30% #00004D "/>
+                                                        </state>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v0e-Xz-uFe">
+                                                        <rect key="frame" x="247.5" y="0.0" width="72" height="30"/>
+                                                        <color key="backgroundColor" name="Blue 98% Pale #D2D2F8"/>
+                                                        <state key="normal" title="Cold">
+                                                            <color key="titleColor" name="Blue 30% #00004D "/>
+                                                        </state>
+                                                    </button>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="v0e-Xz-uFe" firstAttribute="width" secondItem="9RL-Zm-DZ5" secondAttribute="width" id="Reo-PC-ler"/>
+                                                </constraints>
+                                            </stackView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Soup" translatesAutoresizingMaskIntoConstraints="NO" id="tlr-cl-qp1">
+                                                <rect key="frame" x="0.0" y="106.5" width="319.5" height="213"/>
+                                                <color key="backgroundColor" name="Red 75% #C04040"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="tlr-cl-qp1" secondAttribute="height" multiplier="3:2" id="0K0-Gw-u96"/>
+                                                </constraints>
+                                            </imageView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="tlr-cl-qp1" firstAttribute="height" secondItem="MQU-y0-bnz" secondAttribute="height" multiplier="2/3" id="Mvi-9b-fEV"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="5Hk-8T-nbN" userLabel="Stack View details">
+                                        <rect key="frame" x="327.5" y="0.0" width="319.5" height="319.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="More Details" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gtw-Hp-Fh0">
+                                                <rect key="frame" x="0.0" y="0.0" width="319.5" height="26.5"/>
+                                                <color key="backgroundColor" name="Yellow  75% #C0C040"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Irl-N6-aKx">
+                                                <rect key="frame" x="0.0" y="34.5" width="319.5" height="60"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </view>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Base" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DkF-AS-d8U">
+                                                <rect key="frame" x="0.0" y="102.5" width="319.5" height="20.5"/>
+                                                <color key="backgroundColor" name="Yellow  75% #C0C040"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="MYU-1Y-ywN">
+                                                <rect key="frame" x="0.0" y="131" width="319.5" height="150.5"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Yr-0Z-9qb">
+                                                        <rect key="frame" x="0.0" y="0.0" width="74" height="150.5"/>
+                                                        <color key="backgroundColor" name="Blue 98% Pale #D2D2F8"/>
+                                                        <state key="normal" title="Chicken">
+                                                            <color key="titleColor" name="Blue 30% #00004D "/>
+                                                        </state>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AeD-Ew-Ul7">
+                                                        <rect key="frame" x="82" y="0.0" width="74" height="150.5"/>
+                                                        <color key="backgroundColor" name="Blue 98% Pale #D2D2F8"/>
+                                                        <state key="normal" title="Vegetable">
+                                                            <color key="titleColor" name="Blue 30% #00004D "/>
+                                                        </state>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aRP-Th-5UC">
+                                                        <rect key="frame" x="164" y="0.0" width="73.5" height="150.5"/>
+                                                        <color key="backgroundColor" name="Blue 98% Pale #D2D2F8"/>
+                                                        <state key="normal" title="Fish">
+                                                            <color key="titleColor" name="Blue 30% #00004D "/>
+                                                        </state>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p8A-DE-a1n">
+                                                        <rect key="frame" x="245.5" y="0.0" width="74" height="150.5"/>
+                                                        <color key="backgroundColor" name="Blue 98% Pale #D2D2F8"/>
+                                                        <state key="normal" title="Beef">
+                                                            <color key="titleColor" name="Blue 30% #00004D "/>
+                                                        </state>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="THC-Ki-27R">
+                                                <rect key="frame" x="0.0" y="289.5" width="319.5" height="30"/>
+                                                <color key="backgroundColor" name="Blue 98% Pale #D2D2F8"/>
+                                                <state key="normal" title="Add Crunchies!!!">
+                                                    <color key="titleColor" name="Blue 30% #00004D "/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <variation key="heightClass=compact" axis="horizontal"/>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sB7-Gw-8Jh">
+                                <rect key="frame" x="10" y="339.5" width="647" height="15.5"/>
+                                <color key="backgroundColor" name="Blue 98% Pale #D2D2F8"/>
+                                <state key="normal" title="Search for Soup">
+                                    <color key="titleColor" name="Blue 30% #00004D "/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="sB7-Gw-8Jh" secondAttribute="bottom" constant="20" id="P1d-6d-vYU"/>
+                            <constraint firstItem="mtc-LN-QaY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="QeZ-1M-RTV"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="sB7-Gw-8Jh" secondAttribute="trailing" constant="10" id="Tge-Sh-RGH"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="mtc-LN-QaY" secondAttribute="trailing" constant="10" id="VSb-R0-TYD"/>
+                            <constraint firstItem="sB7-Gw-8Jh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="mqr-f9-Tvv"/>
+                            <constraint firstItem="sB7-Gw-8Jh" firstAttribute="top" secondItem="mtc-LN-QaY" secondAttribute="bottom" constant="10" id="uTT-Wh-lP1"/>
+                            <constraint firstItem="mtc-LN-QaY" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="yYO-o2-ufS"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="53.600000000000001" y="26.53673163418291"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Soup" width="200" height="133"/>
+        <namedColor name="Blue 30% #00004D ">
+            <color red="0.0" green="0.0" blue="0.30196078431372547" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Blue 98% Pale #D2D2F8">
+            <color red="0.82352941176470584" green="0.82352941176470584" blue="0.97254901960784312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Red 75% #C04040">
+            <color red="0.75294117647058822" green="0.25098039215686274" blue="0.25098039215686274" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Yellow  75% #C0C040">
+            <color red="0.75300002098083496" green="0.75300002098083496" blue="0.25099998712539673" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
